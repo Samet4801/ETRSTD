@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="logo.png" type="image/png">
+  <meta name="theme-color" content="#ffffff">
+  <title>ETR STUDIO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #4285F4;
+      --text-color: #202124;
+      --background-color: #ffffff;
+      --card-background: #f8f9fa;
+      --button-color: #1a73e8;
+      --button-hover: #1669c1;
+      --footer-bg: #202124;
+      --footer-text: #e8eaed;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background-color: var(--background-color);
+      background-image: url(background.png);
+      background-repeat: repeat;
+      color: var(--text-color);
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: var(--card-background);
+      border-bottom: 1px solid #dadce0;
+    }
+
+    header img {
+      height: 40px;
+      margin-right: 1rem;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      color: var(--text-color);
+    }
+
+    main {
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      flex-grow: 1;
+      align-items: center; /* Center the cards horizontally */
+    }
+
+    .card {
+      background-color: var(--card-background);
+      border: 1px solid #dadce0;
+      border-radius: 8px;
+      padding: 1.5rem;
+      max-width: 900px;
+      box-shadow: 0 1px 3px rgba(60,64,67,0.15);
+      display: flex;
+      gap: 1.5rem;
+      align-items: flex-start;
+    }
+
+    .card img {
+      width: 200px;
+      height: auto;
+      border-radius: 4px;
+      flex-shrink: 0;
+    }
+
+    .card-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-content h2 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-content p {
+      color: #5f6368;
+      margin-bottom: 1rem;
+    }
+
+    .card-content a {
+      align-self: flex-start;
+      background-color: var(--button-color);
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      transition: background-color 0.2s;
+    }
+
+    .card-content a:hover {
+      background-color: var(--button-hover);
+    }
+
+    footer {
+      background-color: var(--footer-bg);
+      color: var(--footer-text);
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 600px) {
+      .card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .card img {
+        width: 100%;
+        max-width: 300px;
+      }
+
+      .card-content a {
+        align-self: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo">
+    <h1>ETR STUDIO</h1>
+  </header>
+  <main>
+    <div class="card">
+      <img src="Card.png" alt="Waypoint Indicator Basic">
+      <div class="card-content">
+        <h2>Waypoint Indicator Basic</h2>
+        <p>A flexible and powerful UI indicator system for world-space targets in Unity. Supports off-screen arrows, distance display, and multiple styles. Perfect for waypoint systems, enemies, and objectives.</p>
+        <a href="#" target="">View on Asset Store</a>
+      </div>
+    </div>
+  </main>
+  <footer>
+    &copy; 2025 ETR STD. All rights reserved. | Contact: samlog.182@outlook.com
+  </footer>
+</body>
+</html>
